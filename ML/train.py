@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, roc_auc_score
 import joblib
 
-Sqlconn = sqlite3.connect("../database/churn_data.db")
+Sqlconn = sqlite3.connect("C:/Projects/Local-Churn-Analytics-Pipeline/database/churn_data.db")
 telco = pd.read_sql("SELECT * FROM customer_churn_features", Sqlconn)
 Sqlconn.close()
 
